@@ -1,0 +1,3 @@
+squeeze_pro.py
+CHange line 1
+numpy import NaN as npNaN --->  numpy import nan as npNaN 

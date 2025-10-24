@@ -1,0 +1,5 @@
+﻿import certifi
+import ssl
+ssl._create_default_https_context = ssl._create_unverified_context
+import os 
+os.environ['SSL_CERT_FILE'] = certifi.where()

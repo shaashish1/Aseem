@@ -1,0 +1,12 @@
+Go to breeze_connect.py
+Search for get_stock_token_value()
+Change "1!" + token_value to "1!" + str(token_value)
+Change "2!" + token_value to "2!" + str(token_value)
+
+
+If still it is not working:
+Go to Terminal and paste: 
+pip install "python-socketio[client]" --upgrade
+
+Press Enter.
+And try running subscribe again.
