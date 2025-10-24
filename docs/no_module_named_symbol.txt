@@ -1,0 +1,3 @@
+no_module_named_symbol
+
+pip install --upgrade pip setuptools

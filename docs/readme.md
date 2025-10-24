@@ -1,0 +1,2 @@
+pip install -r requirements.txt --upgrade
+pip install pya3 flask xlwings pandas requests ta pandas_ta pyotp smartapi-python websocket-client logzero  fyers_apiv3 breeze_connect urllib3 APIConnect whl pyyaml upstox-python-sdk websockets Twisted  KiteConnect protobuf --upgrade

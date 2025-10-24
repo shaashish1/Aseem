@@ -1,0 +1,25 @@
+def calculate_heiken_ashi(open_prices, high_prices, low_prices, close_prices):
+    ha_open = []
+    ha_high = []
+    ha_low = []
+    ha_close = []
+
+    for i in range(len(close_prices)):
+        if i == 0:
+            ha_open.append(open_prices[0])
+            ha_close.append(close_prices[0])
+            ha_high.append(high_prices[0])
+            ha_low.append(low_prices[0])
+        else:
+            ha_open.append((ha_open[i - 1] + ha_close[i - 1]) / 2)
+            ha_close.append((open_prices[i] + high_prices[i] + low_prices[i] + close_prices[i]) / 4)
+            ha_high.append(max(high_prices[i], ha_open[i], ha_close[i]))
+            ha_low.append(min(low_prices[i], ha_open[i], ha_close[i]))
+
+    return ha_open, ha_high, ha_low, ha_close
+
+
+
+HOW TO USE:
+ha_open, ha_high, ha_low, ha_close = calculate_heiken_ashi(opens, highs, lows, closes)
+
